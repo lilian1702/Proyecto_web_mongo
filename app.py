@@ -31,15 +31,15 @@ app.config.update(dict(
 
 db=MongoEngine(app)
 recaptcha=ReCaptcha(app)
-
+from routes.genero import *
+from routes.pelicula import *
+from routes.usuario import *
 
 
 
 if __name__=="__main__":
     
-    from routes.genero import *
-    from routes.pelicula import *
-    from routes.usuario import *
+   
     app.run(port=3000, host="0.0.0.0",debug=True)
     
     

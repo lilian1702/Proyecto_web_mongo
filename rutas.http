@@ -1,0 +1,33 @@
+
+#post de genero
+http://127.0.0.1:3000/genero
+ {        
+   "nombre":"infantil"
+
+    }
+
+#post de pelicula
+http://127.0.0.1:3000/pelicula
+
+ {"codigo": 12345,
+            "duracion": 30,
+            "genero": "infantil",
+            "protagonista": "el niño",
+            "resumen": "el principito va a diferentes universos en busca de la felicidad",
+            "titulo": "el principito"}
+            
+###post de pelicula
+
+
+post http://127.0.0.1:3000/pelicula/
+Content-Type: application/json
+
+ {
+            "codigo": "123",
+            "duracion": 30,
+            "genero": "67e6ef13e0e75dec21c7e02e",
+            "protagonista": "camilo",
+            "resumen": "las 50 sombras",
+            "titulo": "50 sombras de camilo y contanza"
+
+        }
